@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>My Node Site</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button class="collapsed navbar-toggle" data-toggle="collapse" data-target="#navbar_collapse">
+							<span class="sr-only">Toggle navigation</span>Menu <i class="fa fa-bars"></i>
+						</button>
+						<a href="/" class="navbar-brand">My Site</a>
+					</div>
+					<div id="navbar_collapse" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="/">Home</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="/contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- MAIN CONTENT HERE -->
+	<%- defineContent('hero') %>
+
+	<main>
+		<div class="container">
+			<%- defineContent('body') %>
+		</div>
+	</main>
+
+	<footer>
+		Awesome Site. Copyright &copy; 2016
+	</footer>
+
+	<!-- jQuery Library -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
